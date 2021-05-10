@@ -1,0 +1,19 @@
+{
+  "name": "wangqs/huaweicloud-moderation",
+  "description": "华为云内容审核拓展",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "wangqs"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Wangqs\\Moderation\\": "src"
+    }
+  },
+  "require": {
+    "ext-mbstring": "*",
+    "ext-curl": "*"
+  }
+}
