@@ -5,9 +5,7 @@
 	 * Date: 2021/5/10 8:41 下午
 	 */
 
-	namespace Wangqs\Moderation\Distortion;
-
-	use Wangqs\Moderation\Constant\Constants;
+	namespace Wangqs\Moderation;
 
 	/**
 	 *  畸形矫正

@@ -1,8 +1,6 @@
 <?php
 
-	namespace Wangqs\Moderation\Clarity;
-
-	use Wangqs\Moderation\Constant\Constants;
+	namespace Wangqs\Moderation;
 
 	/**
 	 *  清晰度检测

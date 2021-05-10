@@ -5,9 +5,7 @@
 	 * Date: 2021/5/10 8:42 下午
 	 */
 
-	namespace Wangqs\Moderation\Token;
-
-	use Wangqs\Moderation\Constant\Constants;
+	namespace Wangqs\Moderation;
 
 	/**
 	 *

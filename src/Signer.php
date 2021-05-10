@@ -15,17 +15,6 @@
 	define( "HeaderContentSha256" , "X-Sdk-Content-Sha256" );
 
 
-	class Request
-	{
-		public $method = "";
-		public $scheme = "";
-		public $host = "";
-		public $uri = "";
-		public $query = array();
-		public $headers = array();
-		public $body = "";
-	}
-
 	class Signer
 	{
 		public $AppKey = "";
