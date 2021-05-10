@@ -9,7 +9,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Wangqs\\Moderation\\": "src"
+      "Wangqs\\Moderation\\": "src/"
     }
   },
   "require": {
