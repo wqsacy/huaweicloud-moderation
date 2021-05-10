@@ -1,9 +1,4 @@
 <?php
-	/**
-	 *
-	 * Created by Wangqs
-	 * Date: 2021/5/10 8:49 下午
-	 */
 
 	namespace Wangqs\Moderation;
 

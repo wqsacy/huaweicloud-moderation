@@ -6,7 +6,6 @@
 	 */
 
 
-	use Wangqs\Moderation\Text;
 
 	$text = '中华人民共和国宪法';
 
@@ -14,7 +13,7 @@
 	$sk = '';
 	$endponit = '';
 
-	$client = new Text( $ak , $sk , $endponit );
+	$client = new Wangqs\Moderation\Text( $ak , $sk , $endponit );
 
 	$rs = $client->monitor( $text );
 
