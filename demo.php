@@ -1,19 +1,16 @@
 <?php
-	/**
-	 *  测试
-	 * Created by Wangqs
-	 * Date: 2021/5/10 9:09 下午
-	 */
 
+	require 'vendor/autoload.php';
 
+	use Wangqs\Moderation\Text;
 
-	$text = '中华人民共和国宪法';
+	$text = '666666luo聊请+110亚砷酸钾六位qqweixin,fuck666666666666666';
 
 	$ak = '';
 	$sk = '';
 	$endponit = '';
 
-	$client = new Wangqs\Moderation\Text( $ak , $sk , $endponit );
+	$client = new Text( $ak , $sk , $endponit );
 
 	$rs = $client->monitor( $text );
 

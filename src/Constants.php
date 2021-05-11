@@ -1,14 +1,19 @@
 <?php
+	/**
+	 *
+	 * Created by Wangqs
+	 * Date: 2021/5/11 09:43
+	 */
 
 	namespace Wangqs\Moderation;
+
 	/**
-	 *  常量封装
+	 *
 	 * Created by Malcolm.
-	 * Date: 2021/5/10  8:28 下午
+	 * Date: 2021/5/11  09:43
 	 */
 	class Constants
 	{
-
 		// iva 请求域名
 		const IVA_ENDPOINT = "iva.cn-north-4.myhuaweicloud.com";
 

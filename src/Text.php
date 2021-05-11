@@ -1,16 +1,19 @@
 <?php
+	/**
+	 *
+	 * Created by Wangqs
+	 * Date: 2021/5/11 09:44
+	 */
 
 	namespace Wangqs\Moderation;
 
-
 	/**
-	 *  文本审核
+	 *
 	 * Created by Malcolm.
-	 * Date: 2021/5/10  8:49 下午
+	 * Date: 2021/5/11  09:44
 	 */
 	class Text
 	{
-
 		protected $categories , $signer , $endponit;
 
 		public function __construct ( $_ak , $_sk , $_endponit , $categories = [] ) {
@@ -21,12 +24,19 @@
 			$this->endponit = $_endponit;
 
 			if ( !count( $categories ) ) {
-				$this->categories = [ "ad" , "abuse" , "politics" , "porn" , "contraband" ];
+				$this->categories = [
+					"ad" ,
+					"politics" ,
+					"abuse" ,
+					"porn" ,
+					"contraband" ,
+					"flood"
+				];
 			}
 		}
 
 
-		public function monitor ( $text , $type = 'content' ) {
+		public function monitor ( $text ) {
 
 			// 构建请求对象
 			$req = new Request();
@@ -36,10 +46,14 @@
 			$req->uri = Constants::MODERATION_TEXT;
 
 			$data = [
-				"categories" => $this->categories ,               // 检测场景 Array politics：涉政 porn：涉黄 ad：广告 abuse：辱骂 contraband：违禁品 flood：灌水
-				"items"      => [                                    // items: 待检测的文本列表  text 待检测文本 type 文本类型
-				                                                     "text" => $text ,
-				                                                     "type" => $type
+				// 检测场景 Array politics：涉政 porn：涉黄 ad：广告 abuse：辱骂 contraband：违禁品 flood：灌水
+				"categories" => $this->categories ,
+				// items: 待检测的文本列表  text 待检测文本 type 文本类型
+				"items"      => [
+					[
+						"text" => $text ,
+						"type" => 'content'
+					]
 				] ,
 			];
 
@@ -77,6 +91,4 @@
 			}
 
 		}
-
-
 	}

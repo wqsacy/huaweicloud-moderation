@@ -1,12 +1,12 @@
 <?php
+	/**
+	 *
+	 * Created by Wangqs
+	 * Date: 2021/5/11 09:41
+	 */
 
 	namespace Wangqs\Moderation;
 
-	/**
-	 *
-	 * Created by Malcolm.
-	 * Date: 2021/5/10  8:51 下午
-	 */
 	define( "BasicDateFormat" , "Ymd\THis\Z" );
 	define( "Algorithm" , "SDK-HMAC-SHA256" );
 	define( "HeaderXDate" , "X-Sdk-Date" );
@@ -14,9 +14,14 @@
 	define( "HeaderAuthorization" , "Authorization" );
 	define( "HeaderContentSha256" , "X-Sdk-Content-Sha256" );
 
-
+	/**
+	 *
+	 * Created by Malcolm.
+	 * Date: 2021/5/11  09:41
+	 */
 	class Signer
 	{
+
 		public $AppKey = "";
 		public $AppSecret = "";
 
@@ -159,4 +164,5 @@
 			}
 			return $header;
 		}
+
 	}
